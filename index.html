@@ -14,16 +14,27 @@
             margin: 0;
         }
 
+        .iframe-container {
+            width: 1600px; /* Aumentando o espaço disponível para evitar corte */
+            height: 900px; /* Altura proporcional ao zoom */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Garante que nada fique para fora */
+        }
+
         iframe {
             width: 1280px;
             height: 720px;
-            transform: scale(0.8); /* Aplica o zoom APENAS no iframe */
-            transform-origin: top center; /* Mantém a escala centralizada */
+            transform: scale(0.8); /* Aplica o zoom de 80% */
+            transform-origin: top center; /* Mantém a centralização correta */
             border: none;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiOGRiYmI5NzYtZWU0Zi00MDE0LWEzZmQtYmMwNDZkM2Y2ODBhIiwidCI6ImRhNjExMjdiLTg4MzItNDFjZi05NzhjLTU5MTg1Yjg0OGI5OCJ9" frameborder="0" allowFullScreen="true"></iframe>
+    <div class="iframe-container">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiOGRiYmI5NzYtZWU0Zi00MDE0LWEzZmQtYmMwNDZkM2Y2ODBhIiwidCI6ImRhNjExMjdiLTg4MzItNDFjZi05NzhjLTU5MTg1Yjg0OGI5OCJ9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
 </body>
 </html>
