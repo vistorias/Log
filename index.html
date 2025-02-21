@@ -12,20 +12,12 @@
             height: 100vh;
             background-color: #f4f4f4;
             margin: 0;
-        }
-
-        .iframe-container {
-            width: 1600px; /* Aumentando o espaço disponível para evitar corte */
-            height: 900px; /* Altura proporcional ao zoom */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden; /* Garante que nada fique para fora */
+            overflow: hidden; /* Remove qualquer rolagem extra */
         }
 
         iframe {
-            width: 1280px;
-            height: 720px;
+            width: 1600px;  /* Aumentamos a largura para compensar o zoom */
+            height: 900px;  /* Aumentamos a altura proporcionalmente */
             transform: scale(0.8); /* Aplica o zoom de 80% */
             transform-origin: top center; /* Mantém a centralização correta */
             border: none;
@@ -33,8 +25,6 @@
     </style>
 </head>
 <body>
-    <div class="iframe-container">
-        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiOGRiYmI5NzYtZWU0Zi00MDE0LWEzZmQtYmMwNDZkM2Y2ODBhIiwidCI6ImRhNjExMjdiLTg4MzItNDFjZi05NzhjLTU5MTg1Yjg0OGI5OCJ9" frameborder="0" allowFullScreen="true"></iframe>
-    </div>
+    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiOGRiYmI5NzYtZWU0Zi00MDE0LWEzZmQtYmMwNDZkM2Y2ODBhIiwidCI6ImRhNjExMjdiLTg4MzItNDFjZi05NzhjLTU5MTg1Yjg0OGI5OCJ9" frameborder="0" allowFullScreen="true"></iframe>
 </body>
 </html>
