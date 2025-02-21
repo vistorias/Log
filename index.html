@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log - Painel de Indicadores</title>
+    <style>
+        body {
+            transform: scale(0.8); /* Ajusta o zoom para 80% */
+            transform-origin: top center; /* Mantém o centro no topo */
+            width: 125%; /* Evita barras de rolagem horizontais */
+            overflow-x: hidden; /* Remove a rolagem horizontal */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.zoom = "80%";
+        });
+    </script>
 </head>
 <body>
     <iframe width="1280px" height="720px" src="https://app.powerbi.com/view?r=eyJrIjoiOGRiYmI5NzYtZWU0Zi00MDE0LWEzZmQtYmMwNDZkM2Y2ODBhIiwidCI6ImRhNjExMjdiLTg4MzItNDFjZi05NzhjLTU5MTg1Yjg0OGI5OCJ9" frameborder="0" allowFullScreen="true"></iframe>
