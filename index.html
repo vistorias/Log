@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log - Painel de Indicadores</title>
     <style>
-        body {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            margin: 0;
+            background-color: #f4f4f4; /* Cor de fundo para evitar espaços extras */
             overflow: hidden; /* Remove qualquer rolagem extra */
         }
 
         iframe {
-            width: 1600px;  /* Aumentamos a largura para compensar o zoom */
-            height: 900px;  /* Aumentamos a altura proporcionalmente */
-            transform: scale(0.8); /* Aplica o zoom de 80% */
-            transform-origin: top center; /* Mantém a centralização correta */
-            border: none;
+            width: 100vw;  /* Ocupa toda a largura da tela */
+            height: 100vh; /* Ocupa toda a altura da tela */
+            border: none;  /* Remove bordas */
         }
     </style>
 </head>
